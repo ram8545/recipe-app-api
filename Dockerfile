@@ -11,7 +11,7 @@ WORKDIR /app
 
 EXPOSE 5000
 
-RUN python -m venv /py && \
+RUN python -m venv /py
 RUN /py/bin/pip install --upgrade pip && \
     /py/bin/pip install -r /tmp/requirements.txt && \
     rm -rf /tmp && \
